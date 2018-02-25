@@ -27,5 +27,5 @@ if [ -f ${WP_ROOT}/wp-load.php ]; then
   find ${WP_ROOT}/wp-content -type d -exec chmod 775 {} \;
   find ${WP_ROOT}/wp-content -type f -exec chmod 664 {} \;
 else
-  echo "wp-config.php now found, "
+  echo "${WP_ROOT}/wp-load.php not found"
 fi
